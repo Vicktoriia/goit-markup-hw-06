@@ -667,12 +667,89 @@
     <!-- Modal form -->
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-inner">
-        <form action="#" class="modal-form">
-        <button class="modal-form-btn-close" data-modal-close>
-          <svg class="icon-close" width="18px" height="18px">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
+        <form class="modal-form" autocomplete="on" novalidate>
+          <button class="modal-form-btn-close" data-modal-close>
+            <svg class="icon-close" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <b class="modal-form-action-text"
+            >Оставьте свои данные, мы вам перезвоним</b
+          >
+          <div class="modal-form-input-container">
+            <input
+              id="modalname"
+              class="modal-form-input"
+              type="text"
+              name="modalname"
+              placeholder=""
+            />
+            <label for="modalname" class="modal-form-label">Имя</label>
+            <svg class="modal-form-input-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="modal-form-input-container">
+            <input
+              id="modalphone"
+              class="modal-form-input"
+              type="tel"
+              name="modalphone"
+              placeholder=""
+            />
+            <label for="modalphone" class="modal-form-label">Телефон</label>
+            <svg class="modal-form-input-icon" width="13" height="13">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="modal-form-input-container">
+            <input
+              id="modalemail"
+              class="modal-form-input"
+              type="email"
+              name="modalemail"
+              placeholder=""
+            />
+            <label for="modalemail" class="modal-form-label">Почта</label>
+            <svg class="modal-form-input-icon" width="15" height="12">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div class="modal-form-input-container">
+            <label for="modalcomment" class="modal-form-label"
+              >Комментарий</label
+            >
+            <textarea
+              id="modalcomment"
+              class="modal-form-input"
+              name="modalcomment"
+              cols="30"
+              rows="10"
+              placeholder=""
+            >
+            </textarea>
+          </div>
+          <div class="license-agreement">
+            <input
+              id="modal-license"
+              class="license-checkbox"
+              type="checkbox"
+              name="modal-license"
+              placeholder=""
+            />
+            <label for="modal" class="modal-license">
+              <span class="label-inner">
+                Соглашаюсь с рассылкой и принимаю
+                <a class="license-agreement__link" href="">
+                  Условия договора
+                </a>
+              </span>
+              <svg class="icon-check" width="11" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </label>
+          </div>
+          <button class="btn-send" type="submit">Отправить</button>
         </form>
       </div>
     </div>
