@@ -662,6 +662,30 @@
             </li>
           </ul>
         </div>
+        <!-- Footer form -->
+        <div class="footer-form-container">
+          <form class="footer-form">
+            <b class="footer-action"> Подпишись на рассылку </b>
+            <div class="footer-form-subscription">
+              <input
+                type="email"
+                id="footerEmail"
+                class="footer-form-email-input"
+                name="footerEmail"
+                placeholder=" "
+              />
+              <label class="footer-form-email-label" for="footerEmail"
+                >E-mail</label
+              >
+              <button type="submit" class="footer-form-btn btn">
+                <span>Подписаться</span>
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>  
       </div>
     </footer>
     <!-- Modal form -->
@@ -729,23 +753,28 @@
             >
           </div>
           <div class="license-agreement">
-            <input
-              id="modal-license"
-              class="license-checkbox"
-              type="checkbox"
-              name="modal-license"
-              placeholder=""
-            />
-            <label for="modal" class="modal-license">
+            <label class="modal-license">
+              <input
+                class="license-checkbox visually-hidden"
+                type="checkbox"
+                name="modal-license"
+                checked=""
+              />
+              <span class="form-icon-check">
+                <svg class="icon-check" width="11" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
               <span class="label-inner">
                 Соглашаюсь с рассылкой и принимаю
-                <a class="license-agreement__link" href="">
+                <a
+                  class="license-agreement-link link"
+                  href=""
+                  rel="noopener noreferrer"
+                >
                   Условия договора
                 </a>
               </span>
-              <svg class="icon-check" width="11" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
             </label>
           </div>
           <button class="btn btn-send" type="submit">Отправить</button>
