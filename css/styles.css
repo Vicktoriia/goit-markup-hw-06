@@ -1033,6 +1033,7 @@ img {
 
 .modal-form-input-container-comment {
   margin-bottom: 20px;
+  height: 120px;
 }
 
 .modal-form-comment::placeholder {
